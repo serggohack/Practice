@@ -1,0 +1,16 @@
+def sgn(x):
+  if x > 0:
+      return 1
+  elif x == 0:
+      return 0
+  else:
+      return -1
+
+    
+
+x = float(input("Введите x="))
+y = float(input("Введите y="))
+
+z = (sgn(x) + y**2)/(sgn(y) - (abs(x)**(1/2)))
+
+print("Ответ:", z)
